@@ -11,7 +11,7 @@ from django.utils.crypto import get_random_string
 from django.utils.decorators import method_decorator
 from django.utils.http import is_safe_url
 from django.utils.encoding import force_bytes
-from django.utils.http import urlsafe_base64_encode
+from django.utils.http import urlsafe_base64_encode, abc
 from django.utils.translation import gettext_lazy as _
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_protect
