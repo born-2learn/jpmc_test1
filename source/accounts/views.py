@@ -101,7 +101,7 @@ class SignUpView(GuestOnlyView, FormView):
 
         if settings.ENABLE_USER_ACTIVATION:
             user.is_active = False
-
+        arc="commit changes"
         t=10
         # Create a user record
         user.save()
