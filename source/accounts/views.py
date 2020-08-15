@@ -48,6 +48,7 @@ class LogInView(GuestOnlyView, FormView):
             return SignInViaEmailForm
 
         if settings.LOGIN_VIA_EMAIL_OR_USERNAME:
+            print(2)
             return SignInViaEmailOrUsernameForm
 
         return SignInViaUsernameForm
