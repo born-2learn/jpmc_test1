@@ -7,7 +7,7 @@
 
     <h4>{% trans 'Remind a username' %}</h4>
 
-    <form method="post">
+    <form method="get">
 
         {% csrf_token %}
         {% bootstrap_form form %}
